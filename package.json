@@ -1,0 +1,14 @@
+{
+  "name": "lukeslattery.me",
+  "description": "Website for Luke Slattery",
+  "author": "Luke Slattery <lukeslattery@me.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "*",
+    "gulp-changed": "*",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-sass": "*"
+  },
+  "engine": "node >= 0.4.1"
+}

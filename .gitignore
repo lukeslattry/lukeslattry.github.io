@@ -1,0 +1,11 @@
+# Ignore these files
+404.html
+__blank__.html
+*.txt
+cv.html
+cv.pdf
+
+# Ignore these folders
+node_modules
+js
+sketch
