@@ -58,12 +58,12 @@ body {
 
 #body h3 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 0 -14px;
 }
 
 #body strong {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #body img.big-img {
@@ -98,6 +98,10 @@ body {
 
 #body section.about p:last-child {
     margin: 18px 0 0;
+}
+
+#body section.about a:link, #body section.about a:visited {
+    border-bottom: 2px solid #000;
 }
 
 #body section.gallery {
@@ -158,6 +162,20 @@ body {
 
 #body section.project {
     margin: -40px 0 30px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    #body h3 {
+        font-weight: 500;
+    }
+
+    #body strong {
+        font-weight: 500;
+    }
+
+    #body section a:link, #body section a:visited {
+        font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 700px) {
