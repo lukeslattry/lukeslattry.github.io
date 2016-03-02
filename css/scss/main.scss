@@ -4,13 +4,13 @@ body {
 }
 
 ::selection {
-	background: #0066CC;
-	color: #99C1EA;
+	background: #000;
+	color: #fff;
 }
 
 ::-moz-selection {
-	background: #0066CC;
-	color: #99C1EA;
+	background: #000;
+	color: #fff;
 }
 
 #body {
@@ -86,6 +86,9 @@ body {
             p:last-child {
                 margin: 18px 0 0;
             }
+        }
+        &.gallery {
+            overflow: hidden;
         }
         &.foundations {
             article {
@@ -164,64 +167,4 @@ body {
             }
         }
     }
-}
-
-/* Responsive Shit */
-@media screen and (max-width: 480px) {
-  #header {
-    h1 {
-      font-size: 30px;
-      margin: 16px 20px;
-    }
-  }
-
-  .content {
-    .content-container {
-      width: 100% -44px;
-      margin: 0px 22px;
-    }
-  }
-
-  #container {
-    margin-top: -70px;
-  }
-
-  #layer {
-    #layer_container {
-      width: 240px;
-      margin-left: -120px;
-      height: 300px;
-      margin-top: -150px;
-      #github, #twitter, #tumblr, #cv, #links, #portfolio {
-        margin:20px 25px;
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
-      }
-      #tumblr {
-        background-size: 46px 46px;
-      }
-
-      #cv {
-        background-size: 44px 44px;
-      }
-
-      #portfolio {
-        background-size: 46px 46px;
-      }
-
-      #links {
-        background-size: 44px 44px;
-      }
-    }
-  }
-  .content {
-    margin-top: 90px;
-    #content-container {
-      width: 82vw;
-    }
-    span {
-      font-size: 16px;
-    }
-  }
 }

@@ -4,13 +4,13 @@ body {
 }
 
 ::selection {
-    background: #0066CC;
-    color: #99C1EA;
+    background: #000;
+    color: #fff;
 }
 
 ::-moz-selection {
-    background: #0066CC;
-    color: #99C1EA;
+    background: #000;
+    color: #fff;
 }
 
 #body {
@@ -100,6 +100,10 @@ body {
     margin: 18px 0 0;
 }
 
+#body section.gallery {
+    overflow: hidden;
+}
+
 #body section.foundations article {
     margin: 20px 0 24px;
 }
@@ -183,64 +187,5 @@ body {
 
     #body section.gallery h2 {
         margin: 0 0 16px 20px;
-    }
-}
-
-/* Responsive Shit */
-@media screen and (max-width: 480px) {
-    #header h1 {
-        font-size: 30px;
-        margin: 16px 20px;
-    }
-
-    .content .content-container {
-        width: 100% -44px;
-        margin: 0px 22px;
-    }
-
-    #container {
-        margin-top: -70px;
-    }
-
-    #layer #layer_container {
-        width: 240px;
-        margin-left: -120px;
-        height: 300px;
-        margin-top: -150px;
-    }
-
-    #layer #layer_container #github, #layer #layer_container #twitter, #layer #layer_container #tumblr, #layer #layer_container #cv, #layer #layer_container #links, #layer #layer_container #portfolio {
-        margin: 20px 25px;
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
-    }
-
-    #layer #layer_container #tumblr {
-        background-size: 46px 46px;
-    }
-
-    #layer #layer_container #cv {
-        background-size: 44px 44px;
-    }
-
-    #layer #layer_container #portfolio {
-        background-size: 46px 46px;
-    }
-
-    #layer #layer_container #links {
-        background-size: 44px 44px;
-    }
-
-    .content {
-        margin-top: 90px;
-    }
-
-    .content #content-container {
-        width: 82vw;
-    }
-
-    .content span {
-        font-size: 16px;
     }
 }
