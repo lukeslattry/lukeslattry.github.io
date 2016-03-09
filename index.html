@@ -5,6 +5,9 @@
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="js/unveil.js"></script>
 		<!-- Responsive Shit -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Favicon -->
@@ -20,7 +23,7 @@
 			<header>
 				<h1><span>Luke</span> Slattery</h1>
 			</header>
-			<img class="big-img" src="imgs/luke.png"/>
+			<img class="big-img" data-src="imgs/luke.png"/>
 			<section class="about">
 				<p>
 					I'm a <i><strong>product designer</strong></i> and <i><strong>software developer</strong></i>. Born and based in Cork, Ireland, I study Computer Science at University College Cork. A passionate product designer and problem solver, I thrive on distilling complex problems into simply designed and beautifully engineered products.
@@ -33,17 +36,17 @@
 				<h2>Projects</h2>
 				<div class="panel full">
 					<a href="/teamwork">
-						<img src="imgs/teamwork.png">
+						<img data-src="imgs/teamwork.png">
 					</a>
 				</div>
 				<div class="panel half">
 					<a href="/parcello">
-						<img src="imgs/parcello.png">
+						<img data-src="imgs/parcello.png">
 					</a>
 				</div>
 				<div class="panel half">
 					<a href="/idahocafe">
-						<img src="imgs/idahocafe.png">
+						<img data-src="imgs/idahocafe.png">
 					</a>
 				</div>
 			</section>
@@ -98,6 +101,11 @@
 				</p>
 			</section>
 		</section>
+		<script>
+			$(document).ready(function() {
+				$('img').unveil();
+			})
+		</script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
