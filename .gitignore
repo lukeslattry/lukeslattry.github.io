@@ -6,6 +6,9 @@ css/animate.css
 js/retina.js
 imgs/luke2.0-ps.png
 imgs/luke_old.png
+imgs/luke-raw.jpg
+imgs/luke2.1-og.jpg
+imgs/luke2.1.jpg
 
 # Ignore these folders
 node_modules
