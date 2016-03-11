@@ -1,7 +1,6 @@
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
-    animation: fadeInLoad 1.8s;
 }
 
 ::selection {
@@ -163,16 +162,6 @@ body {
 
 #body section.project {
     margin: -40px 0 30px;
-}
-
-@keyframes fadeInLoad {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1), (-moz-min-device-pixel-ratio: 1) {
