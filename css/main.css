@@ -66,8 +66,18 @@ body {
     font-weight: 600;
 }
 
+#body img {
+    transition: visibility .06s ease-in-out;
+    -webkit-transition: visibility .06s ease-in-out;
+    -moz-transition: visibility .06s ease-in-out;
+}
+
 #body img.big-img {
     width: 100%;
+}
+
+#body img.loaded {
+    visibility: visible;
 }
 
 #body section {
@@ -103,6 +113,10 @@ body {
 
 #body section.gallery {
     overflow: hidden;
+}
+
+#body section.gallery a {
+    border: none;
 }
 
 #body section.foundations article {

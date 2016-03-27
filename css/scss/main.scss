@@ -64,6 +64,12 @@ body {
         &.big-img {
             width: 100%;
         }
+        transition: visibility .06s ease-in-out;
+        -webkit-transition: visibility .06s ease-in-out;
+        -moz-transition: visibility .06s ease-in-out;
+        &.loaded {
+            visibility: visible;
+        }
     }
     section {
         margin: 40px 0 30px;
@@ -91,6 +97,9 @@ body {
         }
         &.gallery {
             overflow: hidden;
+            a {
+                border: none;
+            }
         }
         &.foundations {
             article {
