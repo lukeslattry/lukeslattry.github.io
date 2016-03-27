@@ -67,6 +67,7 @@ body {
         transition: visibility .06s ease-in-out;
         -webkit-transition: visibility .06s ease-in-out;
         -moz-transition: visibility .06s ease-in-out;
+        visibility: hidden;
         &.loaded {
             visibility: visible;
         }
