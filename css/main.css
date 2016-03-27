@@ -66,19 +66,8 @@ body {
     font-weight: 600;
 }
 
-#body img {
-    transition: visibility .06s ease-in-out;
-    -webkit-transition: visibility .06s ease-in-out;
-    -moz-transition: visibility .06s ease-in-out;
-    visibility: hidden;
-}
-
 #body img.big-img {
     width: 100%;
-}
-
-#body img.loaded {
-    visibility: visible;
 }
 
 #body section {
