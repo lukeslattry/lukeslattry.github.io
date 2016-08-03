@@ -2,16 +2,15 @@
 *.txt
 cv.html
 cv.pdf
+project.html
 css/animate.css
-js/retina.js
 imgs/luke2.0-ps.png
 imgs/luke_old.png
 imgs/luke-raw.jpg
 imgs/luke2.1-og.jpg
 imgs/luke2.1.jpg
+imgs/luke-raw-ps.jpg
 
 # Ignore these folders
 node_modules
 sketch
-
-imgs/luke-raw-ps.jpg
