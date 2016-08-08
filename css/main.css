@@ -210,7 +210,7 @@ body footer .links a:hover {
     }
 
     body .work.grid-2 .item, body .work.grid-3 .item {
-        width: calc(100% - 10px);
+        width: calc(100% - 20px);
     }
 
     body .work img {
