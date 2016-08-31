@@ -188,7 +188,7 @@ body .main footer .container .links ul li {
     }
 
     body .main .container.about {
-        padding: 10px 30px 50px;
+        padding: 10px 30px 30px;
     }
 
     body .main header .container {
@@ -223,7 +223,7 @@ body .main footer .container .links ul li {
     }
 
     body .main footer .container {
-        padding: 30px 20px 50px;
+        padding: 30px 30px 50px;
     }
 
     body .main footer .container .message {
@@ -236,10 +236,6 @@ body .main footer .container .links ul li {
 }
 
 @media screen and (max-width: 740px) {
-    body .main footer .container {
-        padding: 30px 20px 50px;
-    }
-
     body .main footer .container .message {
         width: 100%;
     }

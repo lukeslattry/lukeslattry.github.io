@@ -170,7 +170,7 @@ body {
             .container {
                 padding: 20px 30px;
                 &.about {
-                    padding: 10px 30px 50px;
+                    padding: 10px 30px 30px;
                 }
             }
             header {
@@ -207,7 +207,7 @@ body {
             }
             footer {
                 .container {
-                    padding: 30px 20px 50px;
+                    padding: 30px 30px 50px;
                     .message {
                         width: 60%;
                     }
@@ -224,7 +224,6 @@ body {
         .main {
             footer {
                 .container {
-                    padding: 30px 20px 50px;
                     .message {
                         width: 100%;
                     }
