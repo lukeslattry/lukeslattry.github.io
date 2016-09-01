@@ -47,7 +47,6 @@ body {
         a {
             color: #000;
             text-decoration: none;
-
             transition: border-bottom 0.1s ease-in-out;
             -webkit-transition: border-bottom 0.1s ease-in-out;
             -moz-transition: border-bottom 0.1s ease-in-out;
@@ -65,9 +64,6 @@ body {
             background: #000;
             height: 100%;
             cursor: url('../imgs/custom-crosshair.png'), auto;
-            &:hover {
-
-            }
             .container {
                 padding: 40px 40px 20px;
                 width: calc(100% + 20px);
@@ -100,6 +96,7 @@ body {
                     &:hover {
                         .item-name {
                             opacity: 1;
+                            display: block
                         }
                         .item-filter {
                             opacity: 1;
@@ -108,6 +105,7 @@ body {
                 }
                 .item-name {
                     opacity: 0;
+                    display: none;
                     margin: 0 0 0 0;
                     padding: 0 4px;
                     text-align: center;
@@ -197,12 +195,18 @@ body {
                         }
                         &:hover {
                             .item-name {
-                                opacity: 0;
+                                display: none;
                             }
                             .item-filter {
-                                opacity: 0;
+                                display: none;
                             }
                         }
+                    }
+                    .item-name {
+                        display: none;
+                    }
+                    .item-filter {
+                        display: none;
                     }
                 }
             }
