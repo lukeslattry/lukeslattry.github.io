@@ -183,20 +183,24 @@ body .main footer .container .links ul li {
 }
 
 @media screen and (max-width: 960px) {
+    body {
+        font-size: 16px;
+    }
+
     body .main .container {
         padding: 20px 30px;
     }
 
     body .main .container.about {
-        padding: 10px 30px 30px;
+        padding: 10px 25px 30px;
     }
 
     body .main header .container {
-        padding: 40px 30px 20px;
+        padding: 40px 25px 20px;
     }
 
     body .main .work .container {
-        padding: 30px 30px 10px;
+        padding: 25px 25px 5px;
     }
 
     body .main .work .container .item.one {
@@ -223,7 +227,7 @@ body .main footer .container .links ul li {
     }
 
     body .main footer .container {
-        padding: 30px 30px 50px;
+        padding: 30px 25px 50px;
     }
 
     body .main footer .container .message {
