@@ -58,10 +58,10 @@ body .main strong {
 body .main a {
     color: #000;
     text-decoration: none;
-    transition: border-bottom 0.1s ease-in-out;
-    -webkit-transition: border-bottom 0.1s ease-in-out;
-    -moz-transition: border-bottom 0.1s ease-in-out;
-    -o-transition: border-bottom 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     border-bottom: 1px solid #000;
 }
 
@@ -70,7 +70,8 @@ body .main a:visited {
 }
 
 body .main a:hover {
-    border-bottom: 1px solid #DDD;
+    color: #888;
+    border-bottom: 1px solid #888;
 }
 
 body .main .work {
@@ -154,6 +155,25 @@ body .main .work .container .item-filter {
     -webkit-transition: opacity 0.2s ease-in-out;
     -moz-transition: opacity 0.2s ease-in-out;
     -o-transition: opacity 0.2s ease-in-out;
+}
+
+body .main footer.black {
+    background: #000;
+    color: #fff;
+}
+
+body .main footer.black a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+body .main footer.black a:visited {
+    color: #fff;
+}
+
+body .main footer.black a:hover {
+    color: #AAA;
+    border-bottom: 1px solid #AAA;
 }
 
 body .main footer .container {

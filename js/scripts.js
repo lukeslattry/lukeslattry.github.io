@@ -22,7 +22,7 @@
         document.addEventListener('mousemove', titles, false);
         function titles(e) {
             for (var i = itemNames.length; i--;) {
-                itemNames[i].style.left = e.pageX - itemNames[i].offsetWidth / 2 + 'px';
+                itemNames[i].style.left = e.pageX - itemNames[i].offsetWidth / 2.4 + 'px';
                 itemNames[i].style.top = e.pageY - 36 + 'px';
             }
         }

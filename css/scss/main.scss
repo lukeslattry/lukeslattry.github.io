@@ -47,16 +47,17 @@ body {
         a {
             color: #000;
             text-decoration: none;
-            transition: border-bottom 0.1s ease-in-out;
-            -webkit-transition: border-bottom 0.1s ease-in-out;
-            -moz-transition: border-bottom 0.1s ease-in-out;
-            -o-transition: border-bottom 0.1s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
             border-bottom: 1px solid #000;
             &:visited {
                 color: #000;
             }
             &:hover {
-                border-bottom: 1px solid #DDD;
+                color: #888;
+                border-bottom: 1px solid #888;
             }
         }
         .work {
@@ -134,6 +135,21 @@ body {
             }
         }
         footer {
+            &.black {
+                background: #000;
+                color: #fff;
+                a {
+                    color: #fff;
+                    border-bottom: 1px solid #fff;
+                    &:visited {
+                        color: #fff;
+                    }
+                    &:hover {
+                        color: #AAA;
+                        border-bottom: 1px solid #AAA;
+                    }
+                }
+            }
             .container {
                 padding: 30px 40px 50px;
                 &::after {
