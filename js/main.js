@@ -2,13 +2,13 @@
     'use strict';
     document.addEventListener("DOMContentLoaded", function() {
         var items = document.querySelectorAll('.item');
-        function itemHeight(itemsArray) {
-            for (var i = itemsArray.length; i--;) {
-                itemsArray[i].style.padding = '0px';
-                itemsArray[i].style.height = itemsArray[i].offsetWidth * 0.625 + 'px';
+        function itemHeight() {
+            for (var i = items.length; i--;) {
+                items[i].style.padding = '0px';
+                items[i].style.height = items[i].offsetWidth * 0.625 + 'px';
             }
         }
-        itemHeight(items);
+        itemHeight();
         window.addEventListener('resize', itemHeight, false);
         var itemNames = document.querySelectorAll('.item-name');
         document.addEventListener('mousemove', titles, false);
