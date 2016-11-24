@@ -81,7 +81,8 @@ body {
                     background-color: #fff;
                     background-size: cover;
                     background-position: center;
-                    background-image: url('../imgs/cover.png');
+                    background-repeat: no-repeat;
+                    background-image: url('../imgs/new_cover.png');
                     &.one {
                         width: calc(100% - 15px);
                         padding: 31.25% 0 0 0;
