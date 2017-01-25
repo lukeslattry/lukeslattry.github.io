@@ -1,10 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700';
+@import 'https://fonts.googleapis.com/css?family=Space+Mono:400,500,700';
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Space Mono', monospace;
     color: #000;
     font-size: 18px;
-    -webkit-font-smoothing: antialiased;
 }
 
 body .main {
@@ -12,25 +11,7 @@ body .main {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
-}
-
-body .main .container {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 20px 40px;
-}
-
-body .main .container.about {
-    padding: 0px 40px 40px;
-}
-
-body .main .container.about p {
-    margin: 0 0 20px;
-}
-
-body .main header .container {
-    padding: 30px 40px;
+    padding: 0 100px 26vh;
 }
 
 body .main h1, body .main h2, body .main h3, body .main h4 {
@@ -38,244 +19,208 @@ body .main h1, body .main h2, body .main h3, body .main h4 {
     margin: 0;
 }
 
-body .main h1 {
-    font-weight: bold;
-    font-size: 32px;
-}
-
-body .main h2 {
-    font-size: 18px;
-}
-
-body .main p {
-    line-height: 1.5;
-}
-
-body .main strong {
-    font-weight: 700;
-}
-
-body .main a {
+body .main a:link, body .main a:visited {
     color: #000;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     border-bottom: 1px solid #000;
 }
 
-body .main a:visited {
+body .main a:hover {
+    color: #aaa;
+    border-bottom-color: #aaa;
+}
+
+body .main a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+
+body .main header {
+    position: fixed;
+    top: 60px;
+}
+
+body .main header h1, body .main header h2 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+body .main nav {
+    position: fixed;
+    bottom: 60px;
+}
+
+body .main nav ul {
+    padding: 0;
+}
+
+body .main nav ul li {
+    list-style: none;
+    margin: 6px 0 0 0;
+}
+
+body .main nav ul li span {
+    color: #aaa;
+    padding: 0 20px 0 0;
+}
+
+body .main #menu-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 6px 10px;
+    border: 3px solid #000;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+    display: none;
+}
+
+body .main #menu-btn.invert {
+    background: #fff;
     color: #000;
 }
 
-body .main a:hover {
-    color: #888;
-    border-bottom: 1px solid #888;
+body .main article {
+    margin: 38vh 0 0 0;
 }
 
-body .main .work {
+body .main article:first-child {
+    margin: 35vh 0 52vh 0;
+}
+
+body .main article .title h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 84px;
+}
+
+body .main article .content {
+    margin: -84px 0 0 40%;
+}
+
+body .main article .content p {
+    margin: 0 0 20px 0;
+    line-height: 1.7;
+}
+
+body .main article .content p.sub-title {
+    margin: 60px 0 20px 0;
+}
+
+body .main article .content p.sub-title:first-child {
+    margin: 0 0 20px 0;
+}
+
+body .main article .content img {
     width: 100%;
-    background: #000;
-    height: 100%;
-    cursor: url("../imgs/custom-crosshair.png"), auto;
+    margin: 20px 0 10px 0;
 }
 
-body .main .work .container {
-    padding: 40px 40px 20px;
-    width: calc(100% + 20px);
-    margin: 0 0 0 -20px;
+body .main article .content img:first-child {
+    margin: 5px 0 10px 0;
 }
 
-body .main .work .container::after {
-    content: "";
-    display: block;
-    clear: both;
+body .main article .content img.about {
+    margin: 0 0 20px 0;
 }
 
-body .main .work .container .item {
-    cursor: url("../imgs/custom-crosshair.png"), crosshair;
-    float: left;
-    margin: 0 0 20px 20px;
-    background-color: #fff;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../imgs/new_cover.png");
+body .main article .content ul {
+    padding: 6px 0;
 }
 
-body .main .work .container .item.one {
-    width: calc(100% - 15px);
-    padding: 31.25% 0 0 0;
-}
-
-body .main .work .container .item.two {
-    width: calc(50% - 20px);
-    padding: 31.25% 0 0 0;
-}
-
-body .main .work .container .item.three {
-    width: calc(33.33% - 20px);
-    padding: 31.25% 0 0 0;
-}
-
-body .main .work .container .item:hover .item-name {
-    opacity: 1;
-    display: block;
-}
-
-body .main .work .container .item:hover .item-filter {
-    opacity: 1;
-}
-
-body .main .work .container .item-name {
-    opacity: 0;
-    display: none;
-    margin: 0 0 0 0;
-    padding: 0 4px;
-    text-align: center;
-    position: absolute;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    white-space: nowrap;
-    overflow: hidden;
-    z-index: 1000;
-    transition: opacity 0.1s ease-in-out;
-    -webkit-transition: opacity 0.1s ease-in-out;
-    -moz-transition: opacity 0.1s ease-in-out;
-    -o-transition: opacity 0.1s ease-in-out;
-}
-
-body .main .work .container .item-filter {
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-}
-
-body .main footer.black {
-    background: #000;
-    color: #fff;
-}
-
-body .main footer.black a {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-
-body .main footer.black a:visited {
-    color: #fff;
-}
-
-body .main footer.black a:hover {
-    color: #AAA;
-    border-bottom: 1px solid #AAA;
-}
-
-body .main footer .container {
-    padding: 30px 40px 50px;
-}
-
-body .main footer .container::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-body .main footer .container .message, body .main footer .container .links {
-    float: left;
-}
-
-body .main footer .container .message {
-    width: 70%;
-}
-
-body .main footer .container .links {
-    min-width: 30%;
-}
-
-body .main footer .container .links ul li {
+body .main article .content ul li {
     list-style: none;
-    text-align: right;
-    margin: 0 0 6px 0;
+    margin: 6px 0 0 0;
 }
 
-@media screen and (max-width: 960px) {
-    body {
-        font-size: 16px;
+@media (min-width: 1300px) {
+    body .main {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 100px 30vh;
     }
 
-    body .main .container {
-        padding: 20px 30px;
+    body .main article {
+        margin: 42vh 0 0 0;
     }
 
-    body .main .container.about {
-        padding: 10px 25px 30px;
+    body .main article:first-child {
+        margin: 40vh 0 52vh 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    body .main article .title h3 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body .main article .title h3 {
+        font-size: 52px;
     }
 
-    body .main header .container {
-        padding: 40px 25px 20px;
-    }
-
-    body .main .work .container {
-        padding: 25px 25px 5px;
-    }
-
-    body .main .work .container .item.one {
-        width: calc(100% - 20px);
-        padding: 62.5% 0 0 0;
-    }
-
-    body .main .work .container .item.two {
-        width: calc(100% - 20px);
-        padding: 62.5% 0 0 0;
-    }
-
-    body .main .work .container .item.three {
-        width: calc(100% - 20px);
-        padding: 62.5% 0 0 0;
-    }
-
-    body .main .work .container .item:hover .item-name {
-        display: none;
-    }
-
-    body .main .work .container .item:hover .item-filter {
-        display: none;
-    }
-
-    body .main .work .container .item-name {
-        display: none;
-    }
-
-    body .main .work .container .item-filter {
-        display: none;
-    }
-
-    body .main footer .container {
-        padding: 30px 25px 50px;
-    }
-
-    body .main footer .container .message {
-        width: 60%;
-    }
-
-    body .main footer .container .links {
-        min-width: 40%;
+    body .main article .content {
+        margin: -54px 0 0 40%;
     }
 }
 
 @media screen and (max-width: 740px) {
-    body .main footer .container .message {
-        width: 100%;
+    body .main {
+        padding: 0 40px 20vh;
     }
 
-    body .main footer .container .links {
-        min-width: 100%;
+    body .main header {
+        position: relative;
+        top: 40px;
+    }
+
+    body .main nav {
+        background: #fff;
+        width: 50%;
+        bottom: 100px;
+        right: 40px;
+        padding: 30px 40px;
+        font-size: 20px;
+        border: 3px solid #000;
+        display: none;
+    }
+
+    body .main nav.open {
+        display: block;
+    }
+
+    body .main #menu-btn {
+        display: block;
+    }
+
+    body .main article {
+        margin: 20vh 0 12vh 0;
+    }
+
+    body .main article:first-child {
+        margin: 12vh 0 12vh 0;
+    }
+
+    body .main article .title h3 {
+        font-size: 38px;
+    }
+
+    body .main article .content {
+        margin: 0;
+    }
+
+    body .main article .content p {
+        margin: 0 0 20px 0;
+    }
+
+    body .main article .content img {
+        margin: 5px 0 15px 0;
+    }
+
+    body .main article h3 {
+        margin: 0 0 18px 0;
     }
 }
