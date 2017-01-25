@@ -173,7 +173,7 @@ body {
 @media screen and (max-width: 740px) {
     body {
         .main {
-            padding: 0 40px 20vh;
+            padding: 0 40px 24vh;
             header {
                 position: relative;
                 top: 40px;
@@ -195,9 +195,15 @@ body {
                 display: block;
             }
             article {
-                margin: 20vh 0 12vh 0;
-                &:first-child, &.about {
-                    margin: 12vh 0 12vh 0;
+                margin: 8vh 0 0 0;
+                &:first-child {
+                    margin: 12vh 0 0 0;
+                    .content {
+                        padding: 0;
+                    }
+                }
+                &.about {
+                    margin-top: 8vh;
                 }
                 .title {
                     h3 {
