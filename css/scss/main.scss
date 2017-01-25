@@ -76,6 +76,9 @@ body {
                     padding: 0 0 10vh 0;
                 }
             }
+            &.about {
+                margin-top: calc(38vh - 20px);
+            }
             .title {
                 h3 {
                     font-family: Helvetica, Arial, sans-serif;
@@ -126,7 +129,10 @@ body {
             article {
                 margin: 42vh 0 0 0;
                 &:first-child {
-                    margin: 40vh 0 52vh 0;
+                    margin: 40vh 0 0 0;
+                }
+                &.about {
+                    margin-top: calc(42vh - 20px);
                 }
             }
         }

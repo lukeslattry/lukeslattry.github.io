@@ -94,6 +94,10 @@ body .main article:first-child .content {
     padding: 0 0 10vh 0;
 }
 
+body .main article.about {
+    margin-top: calc(38vh - 20px);
+}
+
 body .main article .title h3 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -151,7 +155,11 @@ body .main article .content ul li {
     }
 
     body .main article:first-child {
-        margin: 40vh 0 52vh 0;
+        margin: 40vh 0 0 0;
+    }
+
+    body .main article.about {
+        margin-top: calc(42vh - 20px);
     }
 }
 
