@@ -71,7 +71,10 @@ body {
         article {
             margin: 38vh 0 0 0;
             &:first-child {
-                margin: 35vh 0 52vh 0;
+                margin: 35vh 0 0 0;
+                .content {
+                    padding: 0 0 10vh 0;
+                }
             }
             .title {
                 h3 {
