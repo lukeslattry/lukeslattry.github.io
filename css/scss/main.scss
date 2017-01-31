@@ -98,6 +98,21 @@ body {
                         }
                     }
                 }
+                .emoji {
+                    font-size: 36px;
+                    width: 36px;
+                    height: 50px;
+                    margin: 2px 0 10px 0;
+                    transform-origin: right bottom;
+                    -moz-animation: wave 400ms 8;
+                    -webkit-animation: wave 400ms 8;
+                    animation: wave 400ms 8;
+                    &:hover {
+                        -moz-animation: reset;
+                        -webkit-animation: reset;
+                        animation: reset;
+                    }
+                }
                 img {
                     width: 100%;
                     margin: 20px 0 10px 0;
@@ -106,6 +121,7 @@ body {
                     }
                     &.about {
                         margin: 0 0 20px 0;
+                        cursor: url("../imgs/pizza.png"), auto;
                     }
                 }
                 ul {
@@ -220,6 +236,9 @@ body {
                     p {
                         margin: 0 0 20px 0;
                     }
+                    .emoji {
+                        display: none;
+                    }
                     img {
                         margin: 5px 0 15px 0;
                     }
@@ -231,3 +250,21 @@ body {
         }
     }
 }
+@-moz-keyframes wave {
+    50% {
+        transform: rotate(-20deg);
+    }
+}
+@-webkit-keyframes wave {
+    50% {
+        transform: rotate(-20deg);
+    }
+}
+@keyframes wave {
+    50% {
+        transform: rotate(-20deg);
+    }
+}
+@-moz-keyframes reset {}
+@-webkit-keyframes reset {}
+@keyframes reset {}
