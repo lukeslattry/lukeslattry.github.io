@@ -1,0 +1,144 @@
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+
+body {
+    font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+body h1, body h2, body p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0;
+}
+
+body p {
+    margin: 0 0 18px 0;
+    letter-spacing: -0.006rem;
+}
+
+body p:first-child {
+    margin: -5px 0 18px 0;
+}
+
+body img {
+    width: 100%;
+}
+
+body a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 0 2px 0;
+    display: inline;
+    position: relative;
+}
+
+body a:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+body a.selected {
+    color: #000;
+}
+
+body a.marked {
+    border-bottom: 1px solid #000;
+}
+
+body a.marked:hover {
+    color: #000;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+body .content img {
+    margin: 0 0 40px 0;
+    background: #000;
+}
+
+body .portfolio a {
+    transform: scaleX(0);
+}
+
+body .portfolio a:hover {
+    opacity: 0.9;
+}
+
+body .grid {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body .grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body .grid .col {
+    width: 100%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body .grid .col.three {
+    width: calc(100% / 3);
+}
+
+body .grid .col.two {
+    width: calc(50% - 20px);
+}
+
+body .grid .col.two:nth-child(even) {
+    margin: 0 0 0 40px;
+}
+
+body .grid .col img {
+    width: 100%;
+}
+
+@media screen and (max-width: 840px) {
+    body .grid .col.two, body .grid .col.three {
+        width: 100%;
+        display: inline-block;
+    }
+
+    body .grid .col.two:nth-child(even), body .grid .col.three:nth-child(even) {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 30px 20px;
+    }
+
+    body .content img {
+        margin: 0 0 20px 0;
+    }
+
+    body .content img.top {
+        margin: 0 0 30px 0;
+    }
+}
