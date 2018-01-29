@@ -1,1 +1,270 @@
-@import 'https://fonts.googleapis.com/css?family=Space+Mono:400,500,700';body{font-family:'Space Mono',monospace;color:#000;font-size:18px}body .main{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0 100px 26vh}body .main h1,body .main h2,body .main h3,body .main h4{font-weight:normal;margin:0}body .main a:link,body .main a:visited{color:#000;text-decoration:none;border-bottom:1px solid #000}body .main a:hover{color:#aaa;border-bottom-color:#aaa}body .main a.anchor{display:block;position:relative;visibility:hidden}body .main header{position:fixed;top:60px}body .main header h1,body .main header h2{font-size:18px;margin-bottom:6px}body .main nav{position:fixed;bottom:60px}body .main nav ul{padding:0}body .main nav ul li{list-style:none;margin:6px 0 0 0}body .main nav ul li span{color:#aaa;padding:0 20px 0 0}body .main #menu-btn{position:fixed;bottom:30px;right:30px;padding:6px 10px;border:3px solid #000;font-weight:bold;background:#000;color:#fff;display:none}body .main #menu-btn.invert{background:#fff;color:#000}body .main article{margin:38vh 0 0 0}body .main article:first-child{margin:35vh 0 0 0}body .main article:first-child .content{padding:0 0 10vh 0}body .main article.about{margin-top:calc(38vh - 20px)}body .main article .title h3{font-family:Helvetica,Arial,sans-serif;font-weight:bold;font-size:84px}body .main article .content{margin:-84px 0 0 40%}body .main article .content p{margin:0 0 20px 0;line-height:1.7}body .main article .content p.sub-title{margin:60px 0 20px 0}body .main article .content p.sub-title:first-child{margin:0 0 20px 0}body .main article .content .emoji{font-size:36px;width:36px;height:50px;margin:2px 0 10px 0;transform-origin:right bottom;-moz-animation:wave 400ms 8;-webkit-animation:wave 400ms 8;animation:wave 400ms 8}body .main article .content .emoji:hover{-moz-animation:reset;-webkit-animation:reset;animation:reset}body .main article .content img{width:100%;margin:20px 0 10px 0}body .main article .content img:first-child{margin:5px 0 10px 0}body .main article .content img.about{margin:0 0 20px 0;cursor:url("../imgs/pizza.png"),auto}body .main article .content ul{padding:6px 0}body .main article .content ul li{list-style:none;margin:6px 0 0 0}@media(min-width:1300px){body .main{max-width:1300px;margin:0 auto;padding:0 100px 30vh}body .main article{margin:42vh 0 0 0}body .main article:first-child{margin:40vh 0 0 0}body .main article.about{margin-top:calc(42vh - 20px)}}@media(max-width:1100px){body .main article .title h3{font-size:72px}}@media(max-width:1024px){body .main article .title h3{font-size:52px}body .main article .content{margin:-54px 0 0 40%}}@media screen and (max-width:740px){body{font-size:17px}body .main{padding:0 30px 24vh}body .main header{position:relative;top:30px}body .main header h1,body .main header h2{font-size:17px;margin-bottom:3px}body .main nav{background:#fff;width:50%;bottom:80px;right:30px;padding:30px;font-size:20px;border:3px solid #000;display:none}body .main nav.open{display:block}body .main #menu-btn{display:block}body .main article{margin:8vh 0 0 0}body .main article:first-child{margin:10vh 0 0 0}body .main article:first-child .content{padding:0}body .main article.about{margin-top:8vh}body .main article .title h3{font-size:32px}body .main article .content{margin:0}body .main article .content p{margin:0 0 20px 0}body .main article .content .emoji{display:none}body .main article .content img{margin:5px 0 15px 0}body .main article h3{margin:0 0 18px 0}}@-moz-keyframes wave{50%{transform:rotate(-20deg)}}@-webkit-keyframes wave{50%{transform:rotate(-20deg)}}@keyframes wave{50%{transform:rotate(-20deg)}}
+@import url('https://fonts.googleapis.com/css?family=Alice');
+@font-face {
+    font-family: HKGroteskBold;
+    src: url("../fonts/HKGrotesk-Bold.eot");
+    src: url("../fonts/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.ttf") format("truetype"), url("../fonts/HKGrotesk-Bold.svg#svgFontName") format("svg");
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body {
+    font-family: HKGroteskBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 96px 0 0;
+    line-height: 1.2;
+    font-size: 28px;
+    background: #fff;
+}
+
+body h1, body h2 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+body h2 {
+    margin: 20px 0 12px;
+}
+
+body p {
+    margin: 0 0 18px 0;
+    letter-spacing: -0.01rem;
+}
+
+body p:first-child {
+    margin: -5px 0 18px 0;
+}
+
+body p span {
+    letter-spacing: -0.04rem;
+}
+
+body img {
+    width: 100%;
+}
+
+body a {
+    color: #000;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+
+body a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 2px;
+    background: #000;
+    transition: transform 0.25s ease;
+    transform: scaleX(0);
+    transform-origin: right center;
+}
+
+body a:hover {
+    cursor: pointer;
+}
+
+body a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+body a.selected:after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+body header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 96px;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+body header h1{
+    position: relative;
+    top: 20px;
+}
+
+body header h1 a:after {
+    width: 0;
+    height: 0;
+}
+
+body header nav .left {
+    position: fixed;
+    top: 41px;
+    left: 35px;
+}
+
+body header nav .right {
+    position: fixed;
+    top: 41px;
+    right: 35px;
+}
+
+body .content img {
+    background: #222;
+    display: block;
+}
+
+body .grid {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body .grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body .grid .col {
+    width: 100%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body .grid .col.three {
+    width: calc(100% / 3);
+}
+
+body .grid .col.two {
+    width: calc(50%);
+}
+
+/* body .grid .col.two:nth-child(even) {
+    margin: 0 0 0 40px;
+} */
+
+body .grid .col img {
+    width: 100%;
+}
+
+body .text-block {
+    width: 700px;
+    margin: 50px auto;
+    font-family: Alice, Garamond, Times New Roman, serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body .text-block a {
+    border-bottom: 3px solid #ccc;
+    padding: 0 0 1px 0;
+}
+
+
+body .text-block a:after {
+    height: 3px;
+}
+
+body .text-block.end {
+    margin: 50px auto 100px;
+}
+
+@media screen and (max-width: 840px) {
+    body .grid .col.two, body .grid .col.three {
+        width: 100%;
+        display: inline-block;
+    }
+
+    body .grid .col.two:nth-child(even), body .grid .col.three:nth-child(even) {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    body .text-block {
+        width: 100%;
+        margin: 36px auto 50px;
+        font-family: Alice, Garamond, Times New Roman, serif;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body header h1{
+        position: relative;
+        top: 10px;
+    }
+    body header nav .left, body header nav .right {
+        position: relative;
+        top: 2px;
+        left: 0;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    body .text-block.end {
+        margin: 50px auto 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 96px 0 0;
+        font-size: 22px;
+    }
+
+    body h1, body h2, body p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 20px;
+    }
+
+    body h1, body h2, body p {
+        font-size: 20px;
+    }
+
+    body header {
+        font-size: 14px;
+        letter-spacing: 1.4px;
+    }
+
+    body header h1{
+        position: relative;
+        top: 12px;
+    }
+
+    body header nav .left, body header nav .right {
+        position: relative;
+        top: 6px;
+        margin: 0 10px;
+    }
+}
