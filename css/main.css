@@ -27,7 +27,7 @@ body {
     box-sizing: border-box;
     padding: 96px 0 0;
     line-height: 1.2;
-    font-size: 28px;
+    font-size: 26px;
     background: #fff;
 }
 
@@ -173,7 +173,7 @@ body .grid .col img {
 }
 
 body .text-block {
-    width: 700px;
+    width: 680px;
     margin: 50px auto;
     font-family: Alice, Garamond, Times New Roman, serif;
     -webkit-box-sizing: border-box;
@@ -228,7 +228,7 @@ body .text-block.end {
         margin: 0 10px;
     }
     body .text-block.end {
-        margin: 50px auto 80px;
+        margin: 40px auto 80px;
     }
 }
 
