@@ -132,7 +132,11 @@ body header nav .right {
 }
 
 body .content img {
-    background: #222;
+    background-color: #222;
+    background-image: url(../imgs/loading.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
     display: block;
 }
 
@@ -192,7 +196,9 @@ body .text-block a:after {
 }
 
 body .text-block.end {
-    margin: 50px auto 100px;
+    margin: 10px auto 100px;
+    width: auto;
+    padding: 0 40px;
 }
 
 @media screen and (max-width: 840px) {
