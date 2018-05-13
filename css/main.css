@@ -196,9 +196,7 @@ body .text-block a:after {
 }
 
 body .text-block.end {
-    margin: 10px auto 100px;
-    width: auto;
-    padding: 0 40px;
+    margin: 50px auto 100px;
 }
 
 @media screen and (max-width: 840px) {
