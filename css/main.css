@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alice');
-@font-face {
-    font-family: HKGroteskBold;
-    src: url("../fonts/HKGrotesk-Bold.eot");
-    src: url("../fonts/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.ttf") format("truetype"), url("../fonts/HKGrotesk-Bold.svg#svgFontName") format("svg");
-}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:500');
 
 @font-face {
     font-family: HKGroteskMedium;
@@ -22,7 +17,7 @@
 }
 
 body {
-    font-family: HKGroteskMedium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: HKGroteskMedium, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -50,7 +45,7 @@ h3 {
 h3 span {
     display: inline-block;
     transform-origin: right 80%;
-    animation: spin 600ms linear infinite;
+    animation: spin 600ms ease-in-out infinite;
 }
 
 body a {
