@@ -31,6 +31,28 @@ body {
     color: #fff;
 }
 
+.pizza {
+    cursor: url(../imgs/pizza.png), auto;
+}
+.pizza1 {
+    cursor: url(../imgs/pizza1.png), auto;
+}
+.pizza2 {
+    cursor: url(../imgs/pizza2.png), auto;
+}
+.pizza3 {
+    cursor: url(../imgs/pizza3.png), auto;
+}
+.pizza4 {
+    cursor: url(../imgs/pizza4.png), auto;
+}
+.pizza5 {
+    cursor: url(../imgs/pizza5.png), auto;
+}
+.pizza6 {
+    cursor: url(../imgs/pizza6.png), auto;
+}
+
 body h1, h2, h3 {
     font-size: 26px;
     font-weight: normal;
