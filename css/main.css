@@ -82,12 +82,13 @@ body a:hover:after, body a.selected:after {
 
 body .color-block {
     background: #ccc;
-    position: relative;
+    position: absolute;
     height: 500px;
     width: 130vw;
     bottom: -240px;
     left: -30px;
     -webkit-transform: rotate(-15deg);
+    overflow: hidden;
     z-index: -1
 }
 
