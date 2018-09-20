@@ -29,6 +29,7 @@ body {
     font-size: 26px;
     background: #aaa;
     color: #fff;
+    overflow: hidden;
 }
 
 body h1, h2, h3 {
@@ -77,6 +78,17 @@ body a:hover {
 
 body a:hover:after, body a.selected:after {
     display: block;
+}
+
+body .color-block {
+    background: #ccc;
+    position: relative;
+    height: 500px;
+    width: 130vw;
+    bottom: -240px;
+    left: -30px;
+    -webkit-transform: rotate(-15deg);
+    z-index: -1
 }
 
 @keyframes wave {
