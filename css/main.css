@@ -27,8 +27,8 @@ body {
     padding: 30px;
     line-height: 1.2;
     font-size: 26px;
-    background: #fff;
-    color: #111;
+    background: #aaa;
+    color: #fff;
 }
 
 body h1, h2, h3 {
@@ -55,7 +55,7 @@ h3 span {
 }
 
 body a {
-    color: #111;
+    color: #fff;
     text-decoration: none;
     display: inline;
     position: relative;
@@ -68,7 +68,7 @@ body a:after {
     width: 100%;
     left: 0px;
     height: 3px;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 body a:hover {
