@@ -32,9 +32,61 @@ body {
 }
 
 body h1, h2, h3 {
-    font-size: 26px;
     font-weight: normal;
-    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    width: 236px;
+    left: 50%;
+    margin-left: -118px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #eee;
+    position: absolute;
+    bottom: 24px;
+    margin-top: -18px;
+    width: 100%;
+    left: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+
+h2 a {
+    text-decoration: none;
+    color: #eee;
+    cursor: alias;
+}
+
+h2 a:hover {
+    color: #ccc;
+    transition: color 100ms ease-in-out
+}
+
+.strike {
+    position: relative;
+    display: inline-block;
+
+}
+
+.strike:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: black;
+    transform-origin: left;
+    animation: strike-animation 6s ease-in-out infinite;
 }
 
 h3 {
@@ -54,7 +106,7 @@ h3 span {
     user-select: none;
 }
 
-body a {
+/* body a {
     color: #111;
     text-decoration: none;
     display: inline;
@@ -77,7 +129,7 @@ body a:hover {
 
 body a:hover:after, body a.selected:after {
     display: block;
-}
+} */
 
 @keyframes wave {
     0% {
@@ -91,5 +143,20 @@ body a:hover:after, body a.selected:after {
     100% {
         transform:rotate(-15deg);
         -webkit-transform: rotate(-15deg);
+    }
+}
+
+@keyframes strike-animation {
+    0% {
+        width: 0%;
+    }
+    10% {
+        width: 100%;
+    }
+    50% {
+        width: 100%;
+    }
+    60% {
+        width: 0%;
     }
 }
