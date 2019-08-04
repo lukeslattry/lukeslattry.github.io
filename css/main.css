@@ -6,6 +6,12 @@
     src: url("../fonts/HKGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Medium.woff") format("woff"), url("../fonts/HKGrotesk-Medium.ttf") format("truetype"), url("../fonts/HKGrotesk-Medium.svg#svgFontName") format("svg");
 }
 
+@font-face {
+    font-family: HKGroteskRegular;
+    src: url("../fonts/HKGrotesk-Regular.eot");
+    src: url("../fonts/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.ttf") format("truetype"), url("../fonts/HKGrotesk-Regular.svg#svgFontName") format("svg");
+}
+
 ::selection {
     background: #1919FF;
     color: #fff;
@@ -36,6 +42,12 @@ body h1, h2, h3 {
     text-align: center;
 }
 
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-size: 26px;
     height: 24px;
@@ -47,7 +59,7 @@ h1 {
     margin-left: -118px;
 }
 
-h2 {
+/* h2 {
     font-size: 18px;
     color: #eee;
     position: absolute;
@@ -69,12 +81,11 @@ h2 a {
 h2 a:hover {
     color: #ccc;
     transition: color 100ms ease-in-out
-}
+} */
 
 .strike {
     position: relative;
     display: inline-block;
-
 }
 
 .strike:after {
@@ -104,6 +115,77 @@ h3 span {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.cv-section {
+    width: calc(50% - 30px);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cv-section h2 {
+    font-size: 24px;
+    text-align: left;
+    width: 50%;
+    margin: 36px 0;
+}
+
+.education {
+    margin: 0 0 20px 0;
+}
+
+.education .logo {
+    width: 60px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+
+.education .details {
+    display: inline-block;
+}
+
+.education .title, .education .secondary, .education .date {
+    text-align: left;
+    margin: 0 0 5px 0;
+    font-family: HKGroteskRegular;
+    line-height: 1;
+}
+
+.education .title {
+    font-size: 20px;
+    font-family: HKGroteskMedium;
+}
+
+.education .secondary {
+    font-size: 16px;
+}
+
+.education .date {
+    font-size: 16px;
+    color: #888;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    margin: 30px 0;
+    border-top: 2px solid #eee;
+}
+
+@media print {
+    body {
+        transform: scale(.8);
+    }
+
+    img { 
+        page-break-inside: avoid;
+    }
+
+    .cv-section {
+        width: 100%;
+    }
 }
 
 /* body a {
