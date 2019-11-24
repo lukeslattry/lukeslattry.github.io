@@ -56,8 +56,8 @@ p {
 }
 
 p.heading {
-    font-family: HKGroteskSemiBold;
-    font-weight: 700;
+    font-family: HKGroteskMedium;
+    font-weight: normal;
 }
 
 a {
