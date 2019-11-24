@@ -1,9 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:500');
 
 @font-face {
+    font-family: HKGroteskRegular;
+    src: url("../fonts/HKGrotesk-Regular.eot");
+    src: url("../fonts/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/HKGrotesk-Regular.woff") format("woff");
+}
+
+@font-face {
     font-family: HKGroteskMedium;
     src: url("../fonts/HKGrotesk-Medium.eot");
-    src: url("../fonts/HKGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Medium.woff") format("woff"), url("../fonts/HKGrotesk-Medium.ttf") format("truetype"), url("../fonts/HKGrotesk-Medium.svg#svgFontName") format("svg");
+    src: url("../fonts/HKGrotesk-Medium.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/HKGrotesk-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: HKGroteskSemiBold;
+    src: url("../fonts/HKGrotesk-SemiBold.eot");
+    src: url("../fonts/HKGrotesk-SemiBold.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/HKGrotesk-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: HKGroteskBold;
+    src: url("../fonts/HKGrotesk-Bold.eot");
+    src: url("../fonts/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/HKGrotesk-Bold.woff") format("woff");
 }
 
 ::selection {
@@ -17,14 +39,12 @@
 }
 
 body {
-    font-family: HKGroteskMedium, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: HKGroteskRegular, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: normal;
-    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 48px 40px;
     line-height: 1.3;
     font-size: 18px;
     background: #001732;
@@ -33,6 +53,11 @@ body {
 
 p {
     margin: 0 0 16px 0;
+}
+
+p.heading {
+    font-family: HKGroteskSemiBold;
+    font-weight: 700;
 }
 
 a {
@@ -65,7 +90,6 @@ a:hover:after {
 
 img {
     width: 100%;
-    margin-bottom: 24px;
 }
 
 header, #logo {
@@ -85,11 +109,35 @@ header, #logo {
     margin-bottom: 0;
 }
 
+.coverimage, .coverimage-mobile {
+    width: 50%;
+    height: 100vh;
+    background-image: url("../imgs/luke-placeholder.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 2;
+}
+
+.coverimage-mobile {
+    display: none;
+}
+
 .about {
-    width: calc(50% - 40px);
-    margin: 0 0 48px 0;
-    float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 56px 64px;
     transition: width 0.2s ease;
+    position: relative;
+    left: 50%;
+}
+
+.about img {
+    width: 48px;
+    margin-bottom: 32px;
 }
 
 .about .links {
@@ -114,33 +162,54 @@ header, #logo {
     width: 160px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1100px) {
     .about {
-        width: calc(60% - 40px);
+        padding: 40px 48px 48px;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 680px) {
     body {
         font-size: 16px;
     }
-    .about {
-        width: calc(70% - 40px);
+
+    .coverimage {
+        width: 100%;
+        height: calc(100vw * 1.25);
+        position: relative;
     }
-}
 
+    .coverimage-mobile {
+        display: none;
+        
+    }
+/* 
+    .coverimage {
+        display: none;
+    }
 
-@media screen and (max-width: 720px) {
+    .coverimage-mobile {
+        display: block;
+        width: 100%;
+        height: calc(100vw * 1.3);
+        position: relative;
+    }
+*/
     .about {
-        width: calc(100%);
-        margin: 32px 0;
-        float: none;
+        width: 100%;
+        padding: 48px 48px 56px;
+        transition: width 0.2s ease;
+        position: relative;
+        left: 0;
     }
 }
 
 @media screen and (max-width: 540px) {
     body {
-        padding: 40px 24px;
         font-size: 18px;
+    }
+
+    .about {
+        padding: 40px 24px 48px;
     }
 }
