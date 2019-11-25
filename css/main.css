@@ -199,7 +199,7 @@ header, #logo {
 */
     .about {
         width: 100%;
-        padding: 48px 48px 56px;
+        padding: 48px 48px 80px;
         transition: width 0.2s ease;
         position: relative;
         left: 0;
