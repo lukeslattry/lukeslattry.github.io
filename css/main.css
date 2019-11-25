@@ -114,7 +114,7 @@ header, #logo {
 .coverimage, .coverimage-mobile {
     width: 50%;
     height: 100vh;
-    background-image: url("../imgs/luke-placeholder.jpg");
+    background-image: url("https://images.unsplash.com/photo-1484688493527-670f98f9b195?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1630&q=80");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -212,6 +212,6 @@ header, #logo {
     }
 
     .about {
-        padding: 24px 16px 72px;
+        padding: 24px 24px 64px;
     }
 }
