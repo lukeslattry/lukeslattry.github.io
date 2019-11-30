@@ -134,3 +134,14 @@ img {
         padding: 8px 32px 56px;
     }
 }
+
+@media screen and (max-width: 560px) {
+
+    .image {
+        padding: 40px 24px 16px;
+    }
+
+    .about {
+        padding: 8px 24px 56px;
+    }
+}
