@@ -25,7 +25,7 @@
 }
 
 body {
-    font-family: HKGroteskBold, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: HKGroteskMedium, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -33,16 +33,218 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    line-height: 1;
-    font-size: 200px;
+    line-height: 1.4;
+    font-size: 18px;
     background: #fff;
     color: #000;
     padding: 80px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+h1, h2, h3, h4 {
+    font-family: HKGroteskBold, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+header {
+    margin: 0 0 56px 0;
+    line-height: 1;
+    h1 {
+        display: inline;
+    }
+    h2 {
+        display: inline;
+    }
+    h3 {
+        font-family: HKGroteskMedium;
+        font-size: 18px;
+        float: right;
+        text-align: right;
+        line-height: 1.2;
+        margin: -22px 0 0 0;
+        color: #737777;
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1.5px solid #000;
+            padding: 0 0 2px 0;
+            transition: 100ms padding ease-in-out;
+            &:hover {
+                padding: 0;
+                color: #000;
+            }
+        }
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: none;
+        transition: 200ms color ease-in-out;
+        &:hover {
+            color: #414343;
+        }
+    }
+}
+
+h4 {
+    font-size: 22px;
+    margin: 0 0 4px 0;
+}
+
+span {
+    color: #737777;
+}
+
+strong {
+    font-family: HKGroteskBold, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    margin: 0 0 40px 0;
+    &.pad-top {
+        margin-top: 48px;
+    }
+}
+
+.row {
+    display: flex;
+    .block {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        &:nth-child(1) {
+            padding: 0 32px 16px 0;
+        }
+        &:nth-child(2) {
+            padding: 0 0 0 32px;
+            &.top-fill {
+                padding: 28px 0 0 32px;
+            }
+        }
+        &.fiftyfifty {
+            max-width: 50%;
+            flex-grow: 1;
+        }
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1.5px solid #000;
+    padding: 0 0 2px 0;
+    transition: 100ms padding ease-in-out;
+    &:hover {
+        padding: 0;
+    }
+}
+
+.projects {
+    a {
+        border-bottom: none;
+    }
+}
+
+footer {
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            margin: 0 16px 0 0;
+            display: inline;
+            &.email {
+                float: right;
+            }
+        }
+    }
+}
+
+.error {
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -60px 0 0 -60px;
+    transition: 200ms opacity ease-in-out;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    body {
+        padding: 72px 64px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 64px 48px;
+    }
 }
 
 @media screen and (max-width: 720px) {
     body {
-        font-size: 50px;
-        padding: 30px 20px;
+        padding: 40px 24px;
+    }
+    header {
+        margin: 0 0 24px 0;
+        h3 {
+            float: none;
+            text-align: left;
+            margin: 24px 0 48px 0;
+            br {
+                display: none;
+            }
+            &.back {
+                display: none;
+            }
+        }
+    }
+    .row {
+        display: block;
+        .block {
+            &:nth-child(1) {
+                padding: 0 0 8px 0;
+            }
+            &:nth-child(2) {
+                padding: 0;
+                &.top-fill {
+                    padding: 0;
+                }
+            }
+
+            &.fiftyfifty {
+                max-width: 100%;
+                flex-grow: none;
+            }
+        }
+    }
+    footer {
+        margin: 24px 0 32px 0;
+        ul {
+            li {
+                margin: 0 0 8px 0;
+                display: block;
+                &.email {
+                    float: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 40px 16px;
+    }
+    h1, h2 {
+        font-size: 28px;
     }
 }
