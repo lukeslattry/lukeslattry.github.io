@@ -265,4 +265,8 @@ footer ul li.email {
     h1, h2 {
         font-size: 28px;
     }
+
+    img {
+        margin: 0 0 16px 0;
+    }
 }
