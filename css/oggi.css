@@ -35,6 +35,12 @@ img {
     margin-left: -12px;
 }
 
+#appstore {
+    border-radius: 0;
+    margin: 10px 0 40px;
+    width: auto;
+}
+
 .content {
     width: 100%;
     max-width: 640px;
