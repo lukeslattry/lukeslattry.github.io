@@ -1,0 +1,26 @@
+{
+  "name": "lukeslattry.github.io",
+  "version": "1.0.0",
+  "description": "The website of Luke Slattery",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeslattry/lukeslattry.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukeslattry/lukeslattry.github.io/issues"
+  },
+  "homepage": "https://github.com/lukeslattry/lukeslattry.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-cssbeautify": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  }
+}
