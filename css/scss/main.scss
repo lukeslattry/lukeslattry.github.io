@@ -8,8 +8,26 @@
     color: #fff;
 }
 
+@font-face {
+  font-family: 'MunkenSans-Bold';
+  src:  url('../fonts/MunkenSansWeb-Bold.woff2') format('woff2'),
+        url('../fonts/MunkenSansWeb-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MunkenSans-Medium';
+  src:  url('../fonts/MunkenSansWeb-Medium.woff2') format('woff2'),
+        url('../fonts/MunkenSansWeb-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MunkenSans-Regular';
+  src:  url('../fonts/MunkenSansWeb-Regular.woff2') format('woff2'),
+        url('../fonts/MunkenSansWeb-Regular.woff') format('woff');
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-family: 'MunkenSans-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -17,31 +35,19 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    line-height: 1.6;
-    font-size: 18px;
+    line-height: 1.5;
+    font-size: 16px;
     background: #fff;
     color: #000;
     padding: 0 80px 0;
-    margin: 100px auto 56px;
+    margin: 120px auto 80px;
     max-width: 800px;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0;
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: normal;
-    color: #888;
-    margin: 0;
-}
-
-h3 {
-    font-size: 22px;
-    font-weight: 600;
+h1, h2, h3 {
+    font-family: 'MunkenSans-Medium', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-weight: 500;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -54,16 +60,51 @@ h4 {
 a {
     text-decoration: none;
     color: #000;
-    padding: 0 0 3px 0;
-    border-bottom: 2px solid rgba($color: #000000, $alpha: 0.2);
+    padding: 0 0 0 0;
+    border-bottom: 1.5px solid rgba($color: #000000, $alpha: 0.2);
     transition: 200ms border-bottom ease-in-out;
     &:hover {
-        border-bottom: 2px solid rgba($color: #000000, $alpha: 1)
+        border-bottom: 1.5px solid rgba($color: #000000, $alpha: 1);
     }
 }
 
+img {
+    max-width: 100%;
+    margin: 0 0 16px 0;
+}
+
+// header h3 {
+//     a {
+//         border-bottom: 1.5px solid rgba($color: #000000, $alpha: 0);
+//         &:hover {
+//             border-bottom: 1.5px solid rgba($color: #000000, $alpha: 1);
+//         }
+//     }
+// }
+
 main {
-    margin: 32px 0 64px;
+    margin: 32px 0 24px;
+}
+
+.project {
+    margin: 0 0 48px 0;
+    a.image {
+        border-bottom: none;
+        &:hover {
+            border-bottom: none;
+        }
+    }
+    img {
+        margin: 0 0 12px 0;
+    }
+    a.view {
+        float: right;
+        margin: -26px 0 0 0;
+    }
+}
+
+.description {
+    margin: 0 0 32px 0;
 }
 
 #apps {
@@ -161,8 +202,16 @@ ul .previews {
     }
 }
 
-#portfolio {
-    p {
+#contact {
+    margin: 40px 0 0 0;
+    ul {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        li {
+            display: inline-block;
+            margin: 0 16px 0 0;
+        }
     }
 }
 
@@ -185,16 +234,15 @@ footer {
     }
 }
 
-@media screen and (max-width: 1240px) {
-}
-
-@media screen and (max-width: 1024px) {
-}
-
 @media screen and (max-width: 640px) {
     body {
-        margin: 56px 0 40px;
+        margin: 48px 0 80px;
         padding: 0 18px 0;
+        font-size: 18px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
     }
 
     main {
@@ -202,7 +250,7 @@ footer {
     }
 
     #apps {
-        margin: 56px 0 40px;
+        margin: 56px 0 80px;
         ul{
             padding: 0;
             li.app {
@@ -211,19 +259,6 @@ footer {
                 list-style: none;
                 padding: 24px 16px;
                 margin: 0 0 32px 0;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #apps {
-        .download {
-            &.desktop {
-                display: none;
-            }
-            &.mobile {
-                display: block;
             }
         }
     }
