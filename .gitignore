@@ -1,19 +1,5 @@
 # Ignore these files
 *.txt
-cv.html
-cv.pdf
-project.html
-idahocafe.html
-parcello.html
-teamwork.html
-css/animate.css
-imgs/luke2.0-ps.png
-imgs/luke_old.png
-imgs/luke-raw.jpg
-imgs/luke2.1-og.jpg
-imgs/luke2.1.jpg
-imgs/luke-raw-ps.jpg
 
 # Ignore these folders
 node_modules
-sketch
