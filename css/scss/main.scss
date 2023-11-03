@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:500');
+
+@font-face {
+    font-family: HKGroteskMedium;
+    src: url("../fonts/HKGrotesk-Medium.eot");
+    src: url("../fonts/HKGrotesk-Medium.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/HKGrotesk-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: HKGroteskBold;
+    src: url("../fonts/HKGrotesk-Bold.eot");
+    src: url("../fonts/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/HKGrotesk-Bold.woff") format("woff");
+}
+
 ::selection {
     background: #000;
     color: #fff;
@@ -9,7 +25,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-family: HKGroteskMedium, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -17,159 +33,135 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 18px;
     background: #fff;
     color: #000;
-    padding: 0 80px 0;
-    margin: 100px auto 56px;
-    max-width: 800px;
+    padding: 80px;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
-h1 {
+h1, h2, h3, h4 {
+    font-family: HKGroteskBold, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 24px;
-    font-weight: 600;
-    margin: 0;
-}
-
-h2 {
-    font-size: 18px;
     font-weight: normal;
-    color: #888;
     margin: 0;
 }
 
-h3 {
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0;
+
+header {
+    margin: 0 0 56px 0;
+    line-height: 1;
+    h1 {
+        display: inline;
+    }
+    h2 {
+        display: inline;
+    }
+    h3 {
+        font-family: HKGroteskMedium;
+        font-size: 18px;
+        float: right;
+        text-align: right;
+        line-height: 1.2;
+        margin: -22px 0 0 0;
+        color: #737777;
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1.5px solid #000;
+            padding: 0 0 2px 0;
+            transition: 100ms padding ease-in-out;
+            &:hover {
+                padding: 0;
+                color: #000;
+            }
+        }
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: none;
+        transition: 200ms color ease-in-out;
+        &:hover {
+            color: #414343;
+        }
+    }
 }
 
 h4 {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
+    font-size: 22px;
+    margin: 0 0 4px 0;
+}
+
+span {
+    color: #737777;
+}
+
+strong {
+    font-family: HKGroteskBold, 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    margin: 0 0 40px 0;
+    &.pad-top {
+        margin-top: 48px;
+    }
+}
+
+.row {
+    display: flex;
+    .block {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        &:nth-child(1) {
+            padding: 0 32px 16px 0;
+        }
+        &:nth-child(2) {
+            padding: 0 0 0 32px;
+            &.top-fill {
+                padding: 28px 0 0 32px;
+            }
+        }
+        &.fiftyfifty {
+            max-width: 50%;
+            flex-grow: 1;
+        }
+    }
 }
 
 a {
+    color: inherit;
     text-decoration: none;
-    color: #000;
-    padding: 0 0 3px 0;
-    border-bottom: 2px solid rgba($color: #000000, $alpha: 0.2);
-    transition: 200ms border-bottom ease-in-out;
+    border-bottom: 1.5px solid #000;
+    padding: 0 0 2px 0;
+    transition: 100ms padding ease-in-out;
     &:hover {
-        border-bottom: 2px solid rgba($color: #000000, $alpha: 1)
-    }
-}
-
-main {
-    margin: 32px 0 64px;
-}
-
-#apps {
-    margin: 56px 0 56px;
-    ul{
         padding: 0;
-        li.app {
-            min-width: 100%;
-            border-radius: 12px;
-            list-style: none;
-            padding: 32px;
-            margin: 0 0 24px 0;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.08);
-            -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.08);
-            box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.08);
-            &:last-child {
-                margin: 0;
-            }
-        }
-    }
-
-    .info {
-        display: flex;
-        line-height: 1;
-    }
-
-    .icon img{
-        width: 72px;
-        border-radius: 25%;
-    }
-
-    .details {
-        margin: 0 0 0 16px;
-        p {
-            font-size: 16px;
-            color: #888;
-            margin: 8px 0 6px;
-        }
-    }
-
-    .rating {
-        color: #ccc;
-        font-size: 20px;
-    }
-
-    .addinfo {
-        font-size: 16px;
-        color: #666;
-        margin: 16px 0 -4px 0;
-    }
-
-    .download {
-        flex-grow: 10;
-        text-align: right;
-        a {
-            border-bottom: none;
-        }
-        img {
-            margin: 12px 0 0 0;
-        }
-        &.mobile {
-            display: none;
-            text-align: center;
-            img {
-                margin: 24px 0 16px;
-            }
-        }
     }
 }
 
-ul .previews {
-    margin: 24px 0 0 0;
-    max-width: 100%;
-    overflow-x: scroll;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    white-space: nowrap;
-    li {
-        display: inline-block;
-        margin: 0 6px;
-        &:first-child {
-            margin: 0 8px 0 0;
-        }
-        &:last-child {
-            margin: 0 0 0 8px;
-        }
-        img {
-            width: 200px;
-            border-radius: 8px;
-        }
-    }
-}
-
-#portfolio {
-    p {
+.projects {
+    a {
+        border-bottom: none;
     }
 }
 
 footer {
-    p {
-        color: #ccc;
-        font-size: 16px;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            margin: 0 16px 0 0;
+            display: inline;
+            &.email {
+                float: right;
+            }
+        }
     }
 }
 
@@ -186,45 +178,76 @@ footer {
 }
 
 @media screen and (max-width: 1240px) {
+    body {
+        padding: 72px 64px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    body {
+        padding: 64px 48px;
+    }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
     body {
-        margin: 56px 0 40px;
-        padding: 0 18px 0;
+        padding: 40px 24px;
     }
-
-    main {
-        margin: 32px 0 48px;
+    header {
+        margin: 0 0 24px 0;
+        h3 {
+            float: none;
+            text-align: left;
+            margin: 24px 0 48px 0;
+            br {
+                display: none;
+            }
+            &.back {
+                display: none;
+            }
+        }
     }
+    .row {
+        display: block;
+        .block {
+            &:nth-child(1) {
+                padding: 0 0 8px 0;
+            }
+            &:nth-child(2) {
+                padding: 0;
+                &.top-fill {
+                    padding: 0;
+                }
+            }
 
-    #apps {
-        margin: 56px 0 40px;
-        ul{
-            padding: 0;
-            li.app {
-                min-width: 100%;
-                border-radius: 12px;
-                list-style: none;
-                padding: 24px 16px;
-                margin: 0 0 32px 0;
+            &.fiftyfifty {
+                max-width: 100%;
+                flex-grow: none;
+            }
+        }
+    }
+    footer {
+        margin: 24px 0 32px 0;
+        ul {
+            li {
+                margin: 0 0 8px 0;
+                display: block;
+                &.email {
+                    float: none;
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 480px) {
-    #apps {
-        .download {
-            &.desktop {
-                display: none;
-            }
-            &.mobile {
-                display: block;
-            }
-        }
+    body {
+        padding: 40px 16px;
+    }
+    h1, h2 {
+        font-size: 28px;
+    }
+    img {
+        margin: 0 0 16px 0;
     }
 }
