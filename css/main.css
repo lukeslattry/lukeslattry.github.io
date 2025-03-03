@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:500");
+/* @import url("https://fonts.googleapis.com/css?family=Work+Sans:500");
 
 @font-face {
     font-family: HKGroteskMedium;
@@ -10,7 +10,7 @@
     font-family: HKGroteskBold;
   src: url("../fonts/HKGrotesk-Bold.eot");
   src: url("../fonts/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Bold.woff") format("woff");
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
@@ -60,7 +60,7 @@ h2.section-title {
 }
 
 h2 {
-    margin: 24px 0;
+    margin: 32px 0;
 }
 
 ul, li {
@@ -86,7 +86,19 @@ header a:hover {
 }
 
 header .blub {
-    margin: 164px auto 124px;
+    margin: 21vh auto 13vh;
+}
+
+header .blub.project {
+    margin: 80px auto 0;
+}
+
+header .blub.project h2 {
+    margin: 0;
+}
+
+header .blub.project h4 {
+    margin: 8px 0 32px;
 }
 
 header .contact-button {
@@ -115,11 +127,15 @@ span {
     color: #737777;
 }
 
+.projects {
+    margin: 16px 0 0 0;
+}
+
 .projects h3 {
     font-size: 32px;
 }
 
-.projects h4 {
+h4 {
     font-family: "Inter", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 20px;
     margin: 8px 0 0 0;
@@ -134,6 +150,7 @@ span {
 .project-list {
     transition: background-color .2s ease-in-out;
     padding: 80px 64px;
+    background-color: #f5f5f5;
 }
 
 /* .project-list:hover .project-item {
@@ -157,21 +174,39 @@ span {
 }
 
 .project-list:has(.project-item:nth-of-type(3):hover) {
-    background-color: #ade3ec;
+    /* background-color: #ade3ec; */
+    background-color: #bbffe9;
 }
 
 .project-list:has(.project-item:nth-of-type(4):hover) {
-    background-color: #ffdcf3;
+    /* background-color: #ffdcf3; */
+    background-color: #ade3ec;
 }
 
-/* img {
+.archive-link {
+    margin: 24px 0 0;
+    font-weight: 500;
+}
+
+img {
     width: 100%;
-    margin: 0 0 40px 0;
+    margin: 24px 0 0 0;
+}
+
+.video-container {
+    padding: 48px 64px;
+    background-color: #fafafa;
+}
+
+video {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 img.pad-top {
     margin-top: 48px;
-} */
+}
 
 .row {
     display: flex;
@@ -204,15 +239,9 @@ a {
     color: inherit;
     text-decoration: none;
     border-bottom: 1.5px solid #000;
-    padding: 0 0 2px 0;
-    transition: 10ms padding ease-in-out;
 }
 
 a:hover {
-    padding: 0;
-}
-
-.projects a {
     border-bottom: none;
 }
 
@@ -261,24 +290,29 @@ a:hover {
   } */
   
   .logo_items img{
+    width: auto;
     height: 80px;
     margin: 0 32px;
     filter: grayscale(100%);
   }
 
+footer {
+    margin: 48px 16px 32px;
+    position: relative;
+}
+
 footer ul {
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 footer ul li {
     list-style: none;
     margin: 0 16px 0 0;
     display: inline;
-}
-
-footer ul li.email {
-    float: right;
 }
 
 .error {
@@ -366,14 +400,86 @@ footer ul li.email {
 
 @media screen and (max-width: 480px) {
     body {
-        padding: 40px 16px;
+        padding: 32px 16px;
     }
 
-    h1, h2 {
-        font-size: 28px;
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    header {
+        padding: 0 0 24px;
+        position: relative;
+    }
+
+    header .blub {
+        margin: 96px auto 0;
+    }
+
+    header .contact-button {
+        padding: 13px 18px;
+        top: 0;
+        right: 0;
+        font-size: 16px;
+    }
+
+    header .blub.project {
+        margin: 56px auto 0;
+    }
+
+    .logos:before, .logos:after {
+        position: absolute;
+        top: 0;
+        content: '';
+        width: 100px;
+        height: 100%;
+        z-index: 2;
+      }
+
+    .project-list {
+        transition: background-color .2s ease-in-out;
+        padding: 64px 40px;
+    }
+
+    .projects h3 {
+        font-size: 24px;
+    }
+
+    .projects h4 {
+        font-size: 18px;
+    }
+
+    .project-list:hover .project-item:hover {
+        margin-left: 0;
     }
 
     img {
         margin: 0 0 16px 0;
+    }
+
+    .video-container {
+        padding: 16px 32px;
+    }
+
+    video {
+        width: 100%;
+        border-radius: 4px;
+
+    .row .block:nth-child(1) {
+        padding: 0;
+    }
+
+    footer ul li {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    header .blub {
+        margin: 72px auto -16px;
     }
 }
