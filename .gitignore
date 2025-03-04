@@ -6,6 +6,12 @@ project.html
 idahocafe.html
 parcello.html
 teamwork.html
+arrow.html
+audible.html
+hirehive.html
+quip-old.html
+subwoofr.html
+toothpic-old.html
 css/animate.css
 imgs/luke2.0-ps.png
 imgs/luke_old.png
@@ -13,6 +19,11 @@ imgs/luke-raw.jpg
 imgs/luke2.1-og.jpg
 imgs/luke2.1.jpg
 imgs/luke-raw-ps.jpg
+projects/driving-adoption-by-financial-evidence-providers-1.html
+protected.html
+protectedindex.html
+protectedstyle
+info.html
 
 # Ignore these folders
 node_modules
