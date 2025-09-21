@@ -235,6 +235,10 @@ img.pad-top {
     flex-grow: 1;
 }
 
+p.indent {
+    margin-left: 16px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
